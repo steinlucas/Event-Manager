@@ -45,34 +45,42 @@ if(isset($_SESSION['msgErro'])){
 			    	<label for="nome">Nome</label>
 			        <input type="text" maxlength="3" id="nome" name="nome" class="form-control" required/>
 			    </div>
+				<br>
 			    <div class="form-group">
 			    	<label for="nome">Sigla</label>
 		                <input type="text" id="sigla" name="sigla" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome">Data de Inicio</label>
 		                <input type="date" id="data_inicio" name="data_inicio" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome">Data fim</label>
 		                <input type="date" id="data_fim" name="data_fim" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome">Carga Horária</label>
 		                <input type="number" id="carga_horaria" name="carga_horaria" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome">Local de Realização</label>
 		                <input type="text" id="local_realizacao" name="local_realizacao" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome">E-mail da organização</label>
 		                <input type="email" id="email_organizacao" name="email_organizacao" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="nome_responsavel">Responsável pelo Evento</label>
 		                <input type="text" id="nome_responsavel" name="nome_responsavel" class="form-control" required/>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="situacao_evento">Situacao_Evento</label>
 			    	<select class="form-select" aria-label="Default select example" id="situacao_evento" name="situacao_evento">
@@ -84,11 +92,13 @@ if(isset($_SESSION['msgErro'])){
 		                	}?>
 		                </select>
 		            </div>
+					<br>
 		            <div class="form-group">
 			    	<label for="numero_participantes">Número de Participantes</label>
 		                <input type="number" id="numero_participantes" name="numero_participantes" class="form-control" required/>
 		            </div>
-		<div style="clear: both">			
+		<div style="clear: both">
+		<br>
 			<button type="button" class="btn btn-primary" onClick="history.back()" class="btn btn-default" >Voltar</button>
 			<button type="submit" class="btn btn-outline-success btn-block pull-right" >Salvar</button>
 		</div>

@@ -28,10 +28,8 @@ if(isset($_SESSION['msgErro'])){
     <!-- Bootstrap -->
     <!-- CSS only -->
 <link href="/prova/css/bootstrap.min.css" rel="stylesheet">
-
     <script src="/prova/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
     <script src="/prova/js/jquery-3.6.1.min.js" rel="stylesheet"></script>
-    
   </head>
 
  <body>

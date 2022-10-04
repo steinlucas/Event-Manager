@@ -3,7 +3,6 @@ session_start();
 
 $msg = "";
 if(isset($_SESSION['msgErro'])){
-	
 	$msg = $_SESSION['msgErro'];
 	unset($_SESSION['msgErro']); 
 }
@@ -14,9 +13,7 @@ if(isset($_SESSION['msgErro'])){
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  
-      <link rel="stylesheet" href="/prova/css/style.css">
-  
+	<link rel="stylesheet" href="/prova/css/style.css">
 </head>
 
 <body>
@@ -32,13 +29,10 @@ if(isset($_SESSION['msgErro'])){
 			  	<br>     		  
 		<?php echo $msg; ?>
 		<br>
-						 
-			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="submit" >Login</button>  			
+		<button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="submit">Login</button>  			
 		</form>			
 	</div>
 </div>
   <script src='/prova/js/jquery-3.6.1.min.js'></script>
-
-
 </body>
 </html>

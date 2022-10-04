@@ -7,5 +7,3 @@ function obterConexao(){
 	}
 	return $conexao;
 }
-
-
