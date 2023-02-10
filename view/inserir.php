@@ -7,18 +7,16 @@ include_once($baseURL."/prova/bd/Evento.php");
 $listaSituacao = pesquisarSituacaoEvento();
 
 $msg = "";
-if(isset($_SESSION['msgErro'])){
+if (isset($_SESSION['msgErro'])) {
 	$msg = $_SESSION['msgErro'];
 	unset($_SESSION['msgErro']); 
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,15 +26,14 @@ if(isset($_SESSION['msgErro'])){
 
     <!-- Bootstrap -->
     <!-- CSS only -->
-<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="/prova/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
     <script src="/prova/js/jquery-3.6.1.min.js" rel="stylesheet"></script>
-    
-  </head>
+</head>
 
- <body>
-  <?php include_once($baseURL."/prova/view/navbar.php");?>
+<body>
+	<?php include_once($baseURL."/prova/view/navbar.php");?>
 	<div class="container">
 		<h2>Insira os dados do evento:</h2>
 		<div><?php echo $msg;?></div>
@@ -104,6 +101,5 @@ if(isset($_SESSION['msgErro'])){
 		</div>
 		</form>
 	</div>
-
-	</body>
+</body>
 </html>

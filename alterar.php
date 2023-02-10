@@ -1,7 +1,7 @@
 <?php
     include_once("bd/Evento.php");
 
-    if (isset($_GET['codigo']) == false ){
+    if (isset($_GET['codigo']) == false ) {
         header('Location: view/doesntexists.php');
     }
 

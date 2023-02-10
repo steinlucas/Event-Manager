@@ -7,7 +7,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+	<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
@@ -18,12 +18,12 @@
 
     <!-- Bootstrap -->
     <!-- CSS only -->
-<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="/prova/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
     <script src="/prova/js/jquery-3.6.1.min.js" rel="stylesheet"></script>
     
-  </head>
+</head>
 <?php 
 
 ?>
@@ -32,11 +32,11 @@
 	
 	<div class="container">
 		<h2>Insira os dados do evento:</h2>
-    <?php
+    	<?php
 		  foreach($listaEventos as $umRegistro){
 		?>
 		<form action="/prova/alterar.php" method="get" name="formCadEvento" id="formCadEvento">
-      <input type="hidden" class="form-control" id="codigo" name="codigo" value="<?php echo $umRegistro['codigo'];?>">
+      	<input type="hidden" class="form-control" id="codigo" name="codigo" value="<?php echo $umRegistro['codigo'];?>">
 			    <div class="form-group">
 			    	<label for="nome">Nome</label>
 			        <input type="text" maxlength="45" id="nome" name="nome" class="form-control" required value="<?php echo $umRegistro['nome'];?>"/>
@@ -91,6 +91,5 @@
 		</div>
 		</form>
 	</div>
-
-	</body>
+</body>
 </html>

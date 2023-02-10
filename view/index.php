@@ -5,18 +5,18 @@ $baseURL = $_SERVER['DOCUMENT_ROOT'];
 include_once($baseURL."/prova/bd/Evento.php");
 
 $listaEventos = pesquisarEventos();
+
 $msg = "";
-if(isset($_SESSION['msgErro'])){
+if (isset($_SESSION['msgErro'])) {
 	$msg = $_SESSION['msgErro'];
 	unset($_SESSION['msgErro']); 
 }
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
@@ -27,13 +27,13 @@ if(isset($_SESSION['msgErro'])){
 
     <!-- Bootstrap -->
     <!-- CSS only -->
-<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/prova/css/bootstrap.min.css" rel="stylesheet">
     <script src="/prova/js/bootstrap.bundle.min.js" rel="stylesheet"></script>
     <script src="/prova/js/jquery-3.6.1.min.js" rel="stylesheet"></script>
-  </head>
+</head>
 
- <body>
- <?php include_once($baseURL."/prova/view/navbar.php");?>
+<body>
+<?php include_once($baseURL."/prova/view/navbar.php");?>
  	<h1 style="text-align: center">Listagem de Eventos</h1>
  	<br>
 		<div class="panel panel-default">
@@ -65,7 +65,7 @@ if(isset($_SESSION['msgErro'])){
 			?>
 			<!-- -->
 
-			      <tr>
+				<tr>
 				<td><?php echo $umRegistro['codigo'];?></td>
 				<td><?php echo utf8_encode($umRegistro['nome']);?></td>
 				<td><?php echo $umRegistro['sigla'];?></td>
@@ -98,6 +98,6 @@ if(isset($_SESSION['msgErro'])){
 
 			</div>
 		</div>
-		</div>
-	</body>
+	</div>
+</body>
 </html>

@@ -1,5 +1,4 @@
 <?php
-
 $baseURL = $_SERVER['DOCUMENT_ROOT'];
 include_once ($baseURL."/prova//bd/Conexao.php");
 
@@ -11,10 +10,10 @@ function autenticar($usuario, $senha){
 	mysqli_stmt_execute($stmt);
 	$resultado = mysqli_stmt_get_result($stmt);
 	$resultado_array = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
-	if(empty($resultado_array) == false){
+
+	if (empty($resultado_array) == false) {
 		return true;
 	} else{
 		return false;
 	}
 }
-

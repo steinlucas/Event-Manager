@@ -2,7 +2,6 @@
 $baseURL = $_SERVER['DOCUMENT_ROOT'];
 include_once ($baseURL.'/prova/bd/Conexao.php');
 
-	
 function pesquisarEventos(){
 	$comandoSQL = "select e.*, se.descricao as descricao_situacao from eventos e  join situacao_evento se on se.codigo = e.codigo_situacao";
 	$conexao = obterConexao();
@@ -21,7 +20,6 @@ function pesquisarSituacaoEvento(){
 	$resultado = mysqli_stmt_get_result($stmt);
 	$lista = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 	return $lista;
-
 }
 
 
@@ -34,7 +32,6 @@ function inserirEvento($nome, $sigla, $dt_ini, $dt_fim, $ch, $local, $email, $no
 	$resultado = mysqli_stmt_affected_rows($stmt);
 	return $resultado;
 }
-
 
 function pesquisarEventoPorCodigo($codigo){
 	$comandoSQL = "select e.*, se.descricao as descricao_situacao from eventos e  join situacao_evento se on se.codigo = e.codigo_situacao where e.codigo = ?";
